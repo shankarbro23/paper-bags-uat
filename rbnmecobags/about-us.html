@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | RBNM Eco Bags</title>
+  <meta name="description" content="About RBNM Eco Bags: Hyderabad’s kraft paper bag specialists focused on quality, eco-friendly packaging, and brand-first printing." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="favicon.ico" alt="RBNM Eco Bags logo" />
+        <div>
+          <h1>RBNM Eco Bags</h1>
+          <span>Kraft Paper Specialists</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="about-us.html">About Us</a>
+        <a href="process.html">How to Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/919876543210?text=Hi%20RBNM%20Eco%20Bags!%20I%20want%20to%20know%20more%20about%20your%20company%20and%20kraft%20paper%20bags." target="_blank" rel="noopener noreferrer">
+        WhatsApp Order
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="container mobile-menu" id="mobileMenu">
+      <a href="products.html">Products</a>
+      <a href="about-us.html">About Us</a>
+      <a href="process.html">How to Order</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="pill">About Us</span>
+        <h2>Hyderabad’s Kraft Paper Bag Specialists</h2>
+        <p>RBNM Eco Bags helps businesses switch to premium, plastic-free packaging with consistent quality, sharp printing, and reliable delivery.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Story & Focus</h2>
+          <p>We are a Hyderabad-based manufacturer focused on strong kraft paper, precise printing, and dependable bulk supply.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Quality-Controlled Kraft</h3>
+            <p>Every batch is checked for GSM, finish, and handle strength.</p>
+          </article>
+          <article class="card">
+            <h3>Dedicated Printing Team</h3>
+            <p>Sharp logo output, consistent color accuracy, and premium inks.</p>
+          </article>
+          <article class="card">
+            <h3>Fast Turnaround</h3>
+            <p>Local production means faster delivery and responsive support.</p>
+          </article>
+          <article class="card">
+            <h3>Eco Commitments</h3>
+            <p>100% paper-based, recyclable, and plastic-free materials.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-title">
+          <h2>Who We Serve</h2>
+          <p>Trusted by a wide range of businesses across Hyderabad.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Restaurants & Cafes</h3>
+            <p>Food-safe carry bags with optional grease-resistant lining.</p>
+          </article>
+          <article class="card">
+            <h3>Retail & Boutiques</h3>
+            <p>Strong, premium shopping bags for apparel and accessories.</p>
+          </article>
+          <article class="card">
+            <h3>Corporate Clients</h3>
+            <p>Event gifting and brand activation bags with custom finishing.</p>
+          </article>
+          <article class="card">
+            <h3>Wholesale Buyers</h3>
+            <p>Bulk pricing, consistent specs, and dependable supply.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="brand">
+        <img src="favicon.ico" alt="RBNM Eco Bags logo" />
+        <div>
+          <h1>RBNM Eco Bags</h1>
+          <span>Kraft Paper Specialists</span>
+        </div>
+      </div>
+      <div>
+        <a href="products.html">Products</a> •
+        <a href="contact.html">Contact</a> •
+        <a href="https://wa.me/919876543210?text=Hi%20RBNM%20Eco%20Bags!%20I%20need%20more%20information%20about%20your%20kraft%20paper%20bags." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+      <div>© 2026 RBNM Eco Bags. Hyderabad.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+      });
+    }
+  </script>
+</body>
+</html>

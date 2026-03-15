@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RBNM Eco Bags — Premium Kraft Paper Bags Hyderabad</title>
+  <meta name="description" content="Custom printed kraft paper bags for restaurants, bakeries, retail shops & corporates in Hyderabad. Bulk orders welcome. Eco-friendly & plastic-free packaging." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fdf6ed;
+      --kraft: #6b2d0e;
+      --amber: #d2691e;
+      --amber-glow: #f7b36d;
+      --forest: #1a6b3c;
+      --ink: #2b1a12;
+      --muted: #7a6457;
+      --white: #ffffff;
+      --card: #fffaf3;
+      --gold: #c8860a;
+      --max: 1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      overflow-x: hidden;
+    }
+
+
+    /* ── NOISE TEXTURE OVERLAY ── */
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+      opacity: .4; z-index: 0; pointer-events: none;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(100% - 2rem, var(--max)); margin: 0 auto; }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1rem 0;
+      background: rgba(253,246,237,.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(107,45,14,.1);
+      transition: box-shadow .3s;
+    }
+    header.scrolled { box-shadow: 0 8px 40px rgba(43,26,18,.12); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: .75rem; }
+    .brand img { width: 40px; height: 40px; border-radius: 12px; }
+    .brand h1 { font-family: "Playfair Display", serif; font-size: 1.1rem; color: var(--kraft); line-height: 1.2; }
+    .brand span { font-size: .62rem; letter-spacing: .35em; text-transform: uppercase; color: var(--muted); }
+    .nav-links { display: flex; align-items: center; gap: 1.8rem; font-size: .85rem; font-weight: 500; color: rgba(43,26,18,.65); }
+    .nav-links a { position: relative; padding-bottom: 2px; }
+    .nav-links a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 1.5px; background: var(--amber); transition: width .3s; }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--amber); }
+    .btn {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .8rem 1.5rem; border-radius: 999px;
+      font-weight: 600; font-size: .9rem;
+      transition: transform .2s, box-shadow .2s; border: 0;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #25d366, #1ebe5d);
+      color: #fff; box-shadow: 0 10px 28px rgba(37,211,102,.32);
+    }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 18px 40px rgba(37,211,102,.42); }
+    .menu-btn { display: none; background: none; border: none; padding: .4rem; }
+    .menu-btn span { display: block; width: 26px; height: 2px; background: var(--kraft); margin: 5px 0; transition: .3s; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh; display: grid; place-items: center;
+      padding: 8rem 0 5rem; position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(ellipse 80% 60% at 75% 30%, rgba(247,179,109,.28) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 50% at 15% 70%, rgba(26,107,60,.15) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 50% 10%, rgba(200,134,10,.1) 0%, transparent 50%),
+        var(--bg);
+    }
+
+    /* Floating particles */
+    .particles { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+    .particle {
+      position: absolute; border-radius: 50%;
+      animation: float linear infinite;
+      opacity: .4;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: .4; }
+      90% { opacity: .4; }
+      100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+    .hero-content .pill {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .4rem 1rem; border-radius: 999px;
+      background: rgba(210,105,30,.12); border: 1px solid rgba(210,105,30,.3);
+      color: var(--kraft); font-size: .62rem; font-weight: 700;
+      letter-spacing: .3em; text-transform: uppercase;
+      animation: slideInLeft .8s ease both;
+    }
+    .hero-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      line-height: 1.04; color: var(--kraft);
+      margin: 1.2rem 0;
+      animation: slideInLeft .8s .15s ease both;
+    }
+    .hero-content h2 em { font-style: italic; color: var(--amber); }
+    .hero-content p {
+      color: var(--muted); font-size: 1.05rem; max-width: 460px; line-height: 1.7;
+      animation: slideInLeft .8s .25s ease both;
+    }
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem;
+      animation: slideInLeft .8s .35s ease both;
+    }
+    .btn-ghost-dark {
+      background: transparent; border: 1.5px solid rgba(107,45,14,.25);
+      color: var(--kraft); border-radius: 999px;
+      padding: .8rem 1.5rem; font-weight: 600; font-size: .9rem;
+      transition: .2s;
+      display: inline-flex; align-items: center; gap: .5rem;
+    }
+    .btn-ghost-dark:hover { background: rgba(107,45,14,.06); transform: translateY(-2px); }
+    .trust-row {
+      display: flex; flex-wrap: wrap; gap: 1rem 2rem;
+      margin-top: 2.5rem; font-size: .82rem; color: var(--muted); font-weight: 500;
+      animation: slideInLeft .8s .45s ease both;
+    }
+    .trust-row span { display: inline-flex; align-items: center; gap: .45rem; }
+
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ── 3D BAG SHOWCASE ── */
+    .bag-showcase {
+      position: relative;
+      perspective: 1200px;
+      animation: fadeInRight .9s .2s ease both;
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .bag-scene {
+      width: 100%; height: 480px;
+      position: relative; transform-style: preserve-3d;
+    }
+
+    /* The 3D floating bag shape */
+    .bag-3d {
+      position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px; height: 280px;
+      transform-style: preserve-3d;
+      animation: bagRotate 8s ease-in-out infinite;
+    }
+
+    @keyframes bagRotate {
+      0%   { transform: translate(-50%,-50%) rotateY(-15deg) rotateX(5deg); }
+      25%  { transform: translate(-50%,-50%) rotateY(5deg) rotateX(-5deg); }
+      50%  { transform: translate(-50%,-50%) rotateY(15deg) rotateX(5deg); }
+      75%  { transform: translate(-50%,-50%) rotateY(-5deg) rotateX(-3deg); }
+      100% { transform: translate(-50%,-50%) rotateY(-15deg) rotateX(5deg); }
+    }
+
+    .bag-face {
+      position: absolute; border-radius: 16px;
+      backface-visibility: hidden;
+    }
+    .bag-front {
+      width: 220px; height: 280px;
+      background: linear-gradient(160deg, #f3dfc7 0%, #d4a06a 50%, #b87840 100%);
+      border: 2px solid rgba(107,45,14,.3);
+      box-shadow: 0 30px 80px rgba(43,18,9,.35), inset 0 1px 0 rgba(255,255,255,.4);
+      transform: translateZ(30px);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1rem;
+      padding: 1.5rem;
+    }
+    .bag-back {
+      width: 220px; height: 280px;
+      background: linear-gradient(160deg, #c4946a 0%, #a06030 100%);
+      border: 2px solid rgba(107,45,14,.3);
+      transform: translateZ(-30px) rotateY(180deg);
+    }
+    .bag-left {
+      width: 60px; height: 280px;
+      background: linear-gradient(180deg, #c8966a 0%, #986040 100%);
+      transform: rotateY(-90deg) translateZ(30px);
+      border-radius: 16px 0 0 16px;
+    }
+    .bag-right {
+      width: 60px; height: 280px;
+      background: linear-gradient(180deg, #b87840 0%, #885030 100%);
+      left: 160px;
+      transform: rotateY(90deg) translateZ(190px);
+      border-radius: 0 16px 16px 0;
+    }
+    .bag-bottom {
+      width: 220px; height: 60px;
+      background: linear-gradient(90deg, #a06030 0%, #c88050 100%);
+      top: 220px;
+      transform: rotateX(-90deg) translateZ(30px);
+      border-radius: 0 0 16px 16px;
+    }
+
+    /* Handle */
+    .bag-handle {
+      position: absolute; left: 50%; top: -28px;
+      transform: translateX(-50%) translateZ(32px);
+      width: 100px; height: 40px;
+      border: 4px solid #8b4513;
+      border-radius: 999px;
+      background: transparent;
+      box-shadow: 2px 4px 12px rgba(43,18,9,.3);
+    }
+
+    /* Logo on bag */
+    .bag-logo {
+      font-family: "Playfair Display", serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: rgba(107,45,14,.8);
+      text-align: center; line-height: 1.3;
+      text-shadow: 0 1px 0 rgba(255,255,255,.4);
+    }
+    .bag-logo span { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(107,45,14,.5); display: block; margin-top: 4px; }
+    .bag-lines { width: 80%; height: 1px; background: rgba(107,45,14,.2); }
+    .bag-tagline { font-size: .65rem; color: rgba(107,45,14,.5); letter-spacing: .15em; text-transform: uppercase; }
+
+    /* Shadow under bag */
+    .bag-shadow {
+      position: absolute; left: 50%; bottom: 20px;
+      transform: translateX(-50%);
+      width: 180px; height: 30px;
+      background: radial-gradient(ellipse, rgba(43,18,9,.3) 0%, transparent 70%);
+      animation: shadowPulse 8s ease-in-out infinite;
+      filter: blur(8px);
+    }
+    @keyframes shadowPulse {
+      0%, 100% { transform: translateX(-50%) scaleX(1); opacity: .8; }
+      50% { transform: translateX(-50%) scaleX(.7); opacity: .4; }
+    }
+
+    /* Floating info badges */
+    .badge-float {
+      position: absolute;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(107,45,14,.12);
+      border-radius: 14px; padding: .7rem 1rem;
+      box-shadow: 0 8px 30px rgba(43,26,18,.14);
+      font-size: .78rem; font-weight: 600;
+      color: var(--kraft);
+      animation: badgeFloat 4s ease-in-out infinite;
+      white-space: nowrap;
+    }
+    .badge-float .label { font-size: .6rem; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: .15em; display: block; margin-bottom: 2px; }
+    .badge-float.b1 { top: 15%; left: -10%; animation-delay: 0s; }
+    .badge-float.b2 { top: 55%; right: -8%; animation-delay: 1.5s; }
+    .badge-float.b3 { bottom: 12%; left: 5%; animation-delay: .8s; }
+
+    @keyframes badgeFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-wrap {
+      overflow: hidden; padding: 1.2rem 0;
+      background: var(--kraft); color: var(--amber-glow);
+      border-top: 1px solid rgba(247,179,109,.15);
+      border-bottom: 1px solid rgba(247,179,109,.15);
+    }
+    .marquee-track {
+      display: flex; gap: 3rem;
+      animation: marqueeScroll 22s linear infinite;
+      width: max-content;
+    }
+    .marquee-track span {
+      font-size: .8rem; font-weight: 600; letter-spacing: .25em;
+      text-transform: uppercase; white-space: nowrap;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .marquee-track span::before { content: "✦"; opacity: .5; }
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── STATS BAR ── */
+    .stats-section { padding: 4rem 0; }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;
+    }
+    .stat-card {
+      background: var(--card);
+      border-radius: 20px; padding: 2rem 1.5rem;
+      border: 1px solid rgba(107,45,14,.08);
+      box-shadow: 0 4px 20px rgba(43,26,18,.06);
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform .4s cubic-bezier(.23,1.12,.43,1), box-shadow .4s;
+      position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(247,179,109,.08) 0%, transparent 60%);
+      opacity: 0; transition: opacity .3s;
+    }
+    .stat-card:hover::before { opacity: 1; }
+    .stat-card:hover {
+      transform: translateY(-12px) rotateX(6deg) rotateY(-4deg) scale(1.02);
+      box-shadow: 0 25px 60px rgba(43,26,18,.18), 0 0 0 1px rgba(210,105,30,.15);
+    }
+    .stat-num {
+      font-family: "Playfair Display", serif;
+      font-size: 3rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--kraft), var(--amber));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; line-height: 1;
+    }
+    .stat-label { font-size: .8rem; color: var(--muted); margin-top: .6rem; font-weight: 500; letter-spacing: .05em; }
+
+    /* ── PRODUCTS 3D SECTION ── */
+    .products-section { padding: 5rem 0; }
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-header .tag {
+      display: inline-block; padding: .35rem .9rem;
+      border-radius: 999px; background: rgba(107,45,14,.08);
+      color: var(--amber); font-size: .65rem; font-weight: 700;
+      letter-spacing: .3em; text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .section-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: var(--kraft); line-height: 1.1;
+    }
+    .section-header p { color: var(--muted); max-width: 560px; margin: .8rem auto 0; font-size: .95rem; }
+
+    .products-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem;
+      perspective: 1000px;
+    }
+
+    .product-card {
+      border-radius: 24px;
+      background: linear-gradient(145deg, #fffcf6, #f5e4cc);
+      border: 1px solid rgba(107,45,14,.14);
+      box-shadow: 0 8px 30px rgba(43,26,18,.1);
+      padding: 0; overflow: hidden;
+      transform-style: preserve-3d;
+      transition: transform .5s cubic-bezier(.23,1.12,.43,1), box-shadow .5s;
+    }
+    .product-card:hover {
+      transform: translateY(-16px) rotateX(6deg) rotateY(-5deg);
+      box-shadow: 0 32px 80px rgba(43,26,18,.22), 20px 20px 0px rgba(107,45,14,.06);
+    }
+
+    .product-thumb {
+      height: 200px; position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #e8c99a, #c8936a);
+      display: flex; align-items: center; justify-content: center;
+    }
+    /* 3D bag illustration inside product card */
+    .mini-bag {
+      width: 90px; height: 120px;
+      position: relative; transform-style: preserve-3d;
+      animation: miniBagFloat 4s ease-in-out infinite;
+    }
+    @keyframes miniBagFloat {
+      0%, 100% { transform: translateY(0) rotateY(-10deg); }
+      50% { transform: translateY(-12px) rotateY(10deg); }
+    }
+    .mini-bag-body {
+      width: 90px; height: 120px;
+      border-radius: 10px; position: absolute;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 6px;
+    }
+    .mini-bag-handle {
+      width: 42px; height: 18px;
+      border: 3px solid; border-radius: 999px;
+      position: absolute; top: -14px; left: 50%;
+      transform: translateX(-50%);
+    }
+    .mini-bag-text {
+      font-family: "Playfair Display", serif;
+      font-size: .7rem; font-weight: 700; text-align: center;
+      line-height: 1.3;
+    }
+
+    .product-card:nth-child(1) .mini-bag-body { background: linear-gradient(145deg,#f7e3c0,#d4a070); box-shadow: 6px 6px 0 rgba(0,0,0,.15); }
+    .product-card:nth-child(1) .mini-bag-handle { border-color: #8b4513; }
+    .product-card:nth-child(1) .mini-bag-text { color: #8b4513; }
+    .product-card:nth-child(2) .mini-bag-body { background: linear-gradient(145deg,#d4f0e0,#80c8a0); box-shadow: 6px 6px 0 rgba(0,0,0,.12); }
+    .product-card:nth-child(2) .mini-bag-handle { border-color: #1a6b3c; }
+    .product-card:nth-child(2) .mini-bag-text { color: #1a6b3c; }
+    .product-card:nth-child(3) .mini-bag-body { background: linear-gradient(145deg,#f0d4b0,#a06030); box-shadow: 6px 6px 0 rgba(0,0,0,.15); }
+    .product-card:nth-child(3) .mini-bag-handle { border-color: #6b2d0e; }
+    .product-card:nth-child(3) .mini-bag-text { color: #fff; }
+    .product-card:nth-child(4) .mini-bag-body { background: linear-gradient(145deg,#fff0e0,#f0c090); box-shadow: 6px 6px 0 rgba(0,0,0,.12); }
+    .product-card:nth-child(4) .mini-bag-handle { border-color: #d2691e; }
+    .product-card:nth-child(4) .mini-bag-text { color: #8b3510; }
+    .product-card:nth-child(5) .mini-bag-body { background: linear-gradient(145deg,#e8d4f8,#b090d8); box-shadow: 6px 6px 0 rgba(0,0,0,.12); }
+    .product-card:nth-child(5) .mini-bag-handle { border-color: #6040a0; }
+    .product-card:nth-child(5) .mini-bag-text { color: #4a2880; }
+    .product-card:nth-child(6) .mini-bag-body { background: linear-gradient(145deg,#d0e8f8,#80b0d8); box-shadow: 6px 6px 0 rgba(0,0,0,.12); }
+    .product-card:nth-child(6) .mini-bag-handle { border-color: #204870; }
+    .product-card:nth-child(6) .mini-bag-text { color: #1a3a5c; }
+
+    .product-thumb .shine {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,.2) 0%, transparent 60%);
+      transition: opacity .3s;
+    }
+    .product-card:hover .shine { opacity: 0; }
+
+    .product-info { padding: 1.5rem; }
+    .product-badge {
+      display: inline-block; padding: .25rem .7rem;
+      border-radius: 999px; font-size: .62rem; font-weight: 700;
+      letter-spacing: .15em; text-transform: uppercase; margin-bottom: .7rem;
+    }
+    .product-badge.eco { background: rgba(26,107,60,.1); color: var(--forest); }
+    .product-badge.food { background: rgba(210,105,30,.1); color: var(--amber); }
+    .product-badge.corp { background: rgba(107,45,14,.1); color: var(--kraft); }
+    .product-info h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.25rem; color: var(--kraft); margin-bottom: .5rem;
+    }
+    .product-info p { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+    .product-gsm {
+      margin-top: .8rem; font-size: .72rem; font-weight: 600;
+      color: rgba(107,45,14,.55); letter-spacing: .15em; text-transform: uppercase;
+    }
+
+    /* ── PROCESS SECTION ── */
+    .process-section {
+      padding: 5rem 0;
+      background: linear-gradient(180deg, #fff8ee, #f0dcc4);
+      position: relative; overflow: hidden;
+    }
+    .process-section::before {
+      content: ""; position: absolute;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(247,179,109,.2) 0%, transparent 70%);
+      top: -200px; right: -100px;
+    }
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 2rem; position: relative;
+    }
+    .steps-grid::before {
+      content: ""; position: absolute;
+      top: 40px; left: 8%; right: 8%; height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(210,105,30,.3) 20%, rgba(210,105,30,.3) 80%, transparent);
+      z-index: 0;
+    }
+    .step-card {
+      background: rgba(255,255,255,.7); border-radius: 20px;
+      padding: 1.8rem 1.5rem; text-align: center;
+      border: 1px solid rgba(107,45,14,.1);
+      backdrop-filter: blur(10px);
+      position: relative; z-index: 1;
+      transform-style: preserve-3d;
+      transition: transform .4s cubic-bezier(.23,1.12,.43,1), box-shadow .4s;
+    }
+    .step-card:hover {
+      transform: translateY(-14px) rotateX(8deg);
+      box-shadow: 0 24px 60px rgba(43,26,18,.16);
+    }
+    .step-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--amber), var(--kraft));
+      color: #fff; font-family: "Playfair Display", serif;
+      font-size: 1.3rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(210,105,30,.35);
+    }
+    .step-card h3 { font-family: "Playfair Display", serif; font-size: 1rem; color: var(--kraft); margin-bottom: .5rem; }
+    .step-card p { font-size: .85rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── WHY US ── */
+    .why-section { padding: 5rem 0; }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .why-visual {
+      position: relative; height: 420px;
+      perspective: 800px;
+    }
+    .floating-card-3d {
+      position: absolute; border-radius: 20px; padding: 1.4rem;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(107,45,14,.1);
+      box-shadow: 0 12px 40px rgba(43,26,18,.12);
+      transform-style: preserve-3d;
+      transition: transform .4s;
+    }
+    .floating-card-3d:hover { transform: rotateY(-8deg) rotateX(6deg) scale(1.04); }
+    .fc1 { width: 240px; top: 0; left: 0; animation: floatCard1 6s ease-in-out infinite; }
+    .fc2 { width: 200px; top: 30%; right: 0; animation: floatCard2 7s ease-in-out infinite; }
+    .fc3 { width: 220px; bottom: 0; left: 15%; animation: floatCard3 5s ease-in-out infinite; }
+    @keyframes floatCard1 { 0%,100%{transform: translateY(0) rotateY(-5deg);} 50%{transform:translateY(-14px) rotateY(5deg);} }
+    @keyframes floatCard2 { 0%,100%{transform: translateY(-8px) rotateX(4deg);} 50%{transform:translateY(8px) rotateX(-4deg);} }
+    @keyframes floatCard3 { 0%,100%{transform: translateY(4px) rotateY(6deg);} 50%{transform:translateY(-10px) rotateY(-6deg);} }
+    .fc-icon { font-size: 2rem; margin-bottom: .6rem; }
+    .fc-title { font-family: "Playfair Display", serif; font-size: 1rem; color: var(--kraft); margin-bottom: .3rem; }
+    .fc-desc { font-size: .8rem; color: var(--muted); line-height: 1.5; }
+
+    .why-content h2 { font-family: "Playfair Display", serif; font-size: clamp(2rem,4vw,3rem); color: var(--kraft); line-height: 1.15; margin-bottom: 1.5rem; }
+    .why-content h2 em { font-style: italic; color: var(--amber); }
+    .benefit-list { list-style: none; display: grid; gap: 1rem; }
+    .benefit-list li {
+      display: flex; align-items: flex-start; gap: .9rem;
+      padding: 1rem 1.2rem; border-radius: 14px;
+      background: rgba(255,255,255,.6); border: 1px solid rgba(107,45,14,.08);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .benefit-list li:hover { transform: translateX(6px); box-shadow: 0 6px 20px rgba(43,26,18,.1); }
+    .benefit-icon { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg,var(--amber-glow),var(--amber)); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .benefit-text strong { display: block; font-size: .92rem; color: var(--kraft); margin-bottom: .2rem; }
+    .benefit-text span { font-size: .82rem; color: var(--muted); }
+
+    /* ── CTA SECTION ── */
+    .cta-section { padding: 5rem 0; }
+    .cta-block {
+      border-radius: 32px; overflow: hidden; position: relative;
+      background: linear-gradient(135deg, #2c1810, #6b2d0e 55%, #c8600a 100%);
+      padding: 4rem; display: grid;
+      grid-template-columns: 1fr auto; gap: 3rem; align-items: center;
+      box-shadow: 0 30px 80px rgba(43,18,9,.35);
+    }
+    .cta-block::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(247,179,109,.2) 0%, transparent 60%);
+    }
+    .cta-block::after {
+      content: ""; position: absolute;
+      width: 300px; height: 300px; border-radius: 50%;
+      border: 60px solid rgba(255,255,255,.03);
+      top: -80px; right: 20%;
+    }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-content h2 { font-family: "Playfair Display", serif; font-size: clamp(2rem,4vw,3rem); color: #fff; margin-bottom: .8rem; }
+    .cta-content p { color: rgba(255,255,255,.65); font-size: 1rem; }
+    .cta-actions { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1rem; align-items: flex-end; }
+    .cta-actions .btn-primary { background: linear-gradient(135deg,#25d366,#1ebe5d); font-size: 1rem; padding: 1rem 2rem; }
+    .cta-phone { color: rgba(255,255,255,.6); font-size: .82rem; text-align: right; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 3rem 0; border-top: 1px solid rgba(107,45,14,.1);
+      background: #fdf0e0;
+    }
+    .footer-inner {
+      display: flex; flex-wrap: wrap; gap: 1.5rem 3rem;
+      align-items: center; justify-content: space-between;
+    }
+    .footer-links { display: flex; gap: 1.5rem; font-size: .85rem; color: var(--muted); }
+    .footer-links a:hover { color: var(--amber); }
+    .footer-copy { font-size: .8rem; color: rgba(122,100,87,.6); }
+
+    /* ── MOBILE ── */
+    .mobile-menu {
+      display: none; flex-direction: column; gap: .8rem;
+      padding: 1rem; background: rgba(253,246,237,.98);
+      border: 1px solid rgba(107,45,14,.1); border-radius: 16px; margin-top: .5rem;
+    }
+    .mobile-menu.show { display: flex; }
+
+    @media (max-width: 1000px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .bag-showcase { display: flex; justify-content: center; }
+      .bag-scene { height: 360px; width: 100%; max-width: 500px; }
+      .products-grid { grid-template-columns: repeat(2,1fr); }
+      .steps-grid { grid-template-columns: repeat(2,1fr); }
+      .steps-grid::before { display: none; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-visual { height: 300px; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 720px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .cta-block { grid-template-columns: 1fr; }
+      .cta-actions { align-items: flex-start; }
+      .nav-links { display: none; }
+      .menu-btn { display: block; }
+      .badge-float.b1, .badge-float.b2 { display: none; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 480px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="favicon.ico" alt="RBNM Eco Bags" />
+        <div>
+          <h1>RBNM Eco Bags</h1>
+          <span>Kraft Paper Specialists</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="about-us.html">About Us</a>
+        <a href="process.html">How to Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/919876543210?text=Hi%20RBNM%20Eco%20Bags!%20I%20am%20interested%20in%20ordering%20kraft%20paper%20bags." target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.851L.073 23.927c-.077.307.204.587.511.511l6.076-1.459A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.918 0-3.72-.517-5.27-1.418l-.377-.222-3.913.94.94-3.914-.222-.377A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp Order
+      </a>
+      <button class="menu-btn" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="container mobile-menu" id="mobileMenu">
+      <a href="products.html">Products</a>
+      <a href="about-us.html">About Us</a>
+      <a href="process.html">How to Order</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="particles" id="particles"></div>
+      <div class="container hero-grid">
+
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <span class="pill">🌿 Hyderabad's Trusted Supplier</span>
+          <h2>Premium Kraft<br />Paper Bags <em>built<br />to elevate</em> your brand.</h2>
+          <p>Custom printed bags for restaurants, bakeries, retail shops & corporates. Strong GSM options, fast production, and reliable delivery across Hyderabad.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/919876543210?text=Hi%20RBNM%20Eco%20Bags!%20I%20want%20to%20order%20premium%20kraft%20paper%20bags.%20Please%20share%20your%20catalogue." target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.851L.073 23.927c-.077.307.204.587.511.511l6.076-1.459A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.918 0-3.72-.517-5.27-1.418l-.377-.222-3.913.94.94-3.914-.222-.377A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Order on WhatsApp
+            </a>
+            <a class="btn-ghost-dark" href="products.html">View Products →</a>
+          </div>
+          <div class="trust-row">
+            <span>🌿 Plastic-Free</span>
+            <span>🖨️ Custom Printing</span>
+            <span>📦 Bulk Orders</span>
+            <span>🚚 Hyderabad Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: 3D Bag -->
+        <div class="bag-showcase">
+          <!-- Floating info badges -->
+          <div class="badge-float b1">
+            <span class="label">Material</span>
+            100% Kraft Paper
+          </div>
+          <div class="badge-float b2">
+            <span class="label">Min Order</span>
+            500 Pieces
+          </div>
+          <div class="badge-float b3">
+            <span class="label">GSM Range</span>
+            70 – 170 GSM
+          </div>
+
+          <div class="bag-scene">
+            <div class="bag-3d" id="heroBag">
+              <!-- 3D Bag Faces -->
+              <div class="bag-face bag-front">
+                <div class="bag-handle"></div>
+                <div class="bag-logo">
+                  RBNM
+                  <span>Eco Bags</span>
+                </div>
+                <div class="bag-lines"></div>
+                <div class="bag-tagline">Kraft Paper</div>
+              </div>
+              <div class="bag-face bag-back"></div>
+              <div class="bag-face bag-left"></div>
+              <div class="bag-face bag-right"></div>
+              <div class="bag-face bag-bottom"></div>
+            </div>
+            <div class="bag-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MARQUEE ── -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Custom Printing</span>
+        <span>70 to 170 GSM</span>
+        <span>Hyderabad Delivery</span>
+        <span>Eco Certified</span>
+        <span>Bulk Orders Welcome</span>
+        <span>Food Safe Options</span>
+        <span>Twisted Handles</span>
+        <span>Corporate Branding</span>
+        <span>Fast Turnaround</span>
+        <!-- Duplicate for seamless loop -->
+        <span>Custom Printing</span>
+        <span>70 to 170 GSM</span>
+        <span>Hyderabad Delivery</span>
+        <span>Eco Certified</span>
+        <span>Bulk Orders Welcome</span>
+        <span>Food Safe Options</span>
+        <span>Twisted Handles</span>
+        <span>Corporate Branding</span>
+        <span>Fast Turnaround</span>
+      </div>
+    </div>
+
+    <!-- ── STATS ── -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-num" data-target="50">0</div>
+            <div class="stat-label">Orders Completed</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-num" data-target="5">0</div>
+            <div class="stat-label">Product Types</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-num" data-target="24">0</div>
+            <div class="stat-label">Support Response (Hours)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCTS ── -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">Our Products</div>
+          <h2>Bags for Every Business Need</h2>
+          <p>From bakery carry bags to luxury branded packaging — we manufacture them all with precision and care.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <div class="product-card reveal">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Retail<br/>Bag</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge eco">Eco Certified</span>
+              <h3>Retail Shopping Bags</h3>
+              <p>Thick kraft with twisted handles for premium stores & boutiques. Strong and elegant.</p>
+              <div class="product-gsm">70 – 120 GSM · Custom Sizes</div>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-1">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Bakery<br/>Bag</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge food">Food Safe</span>
+              <h3>Bakery Carry Bags</h3>
+              <p>Grease-resistant finish ideal for takeaway, bakeries & food packaging. Hygienic & eco.</p>
+              <div class="product-gsm">80 – 100 GSM · Food Grade</div>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-2">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Gift<br/>Bag</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge corp">Corporate</span>
+              <h3>Branded Gift Bags</h3>
+              <p>Logo printing with matte or gloss finish to showcase your brand at events & gifting.</p>
+              <div class="product-gsm">120 – 170 GSM · Matte Finish</div>
+            </div>
+          </div>
+
+          <div class="product-card reveal">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Stand<br/>Up</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge eco">Pouches</span>
+              <h3>Stand-Up Kraft Pouches</h3>
+              <p>Self-standing kraft paper pouches for snacks, dry goods, and specialty retail packaging.</p>
+              <div class="product-gsm">90 – 130 GSM · Resealable</div>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-1">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Wine<br/>Bag</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge corp">Premium</span>
+              <h3>Wine & Bottle Bags</h3>
+              <p>Tall, elegant bags with ribbon handles for wine bottles, corporate kits & luxury gifts.</p>
+              <div class="product-gsm">140 – 170 GSM · Ribbon Handle</div>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-2">
+            <div class="product-thumb">
+              <div class="mini-bag">
+                <div class="mini-bag-body">
+                  <div class="mini-bag-handle"></div>
+                  <div class="mini-bag-text">Bulk<br/>Order</div>
+                </div>
+              </div>
+              <div class="shine"></div>
+            </div>
+            <div class="product-info">
+              <span class="product-badge food">Wholesale</span>
+              <h3>Bulk Plain Kraft Bags</h3>
+              <p>Unprinted plain kraft bags for wholesale buyers, chains, and resellers. Best price per unit.</p>
+              <div class="product-gsm">70 – 100 GSM · MOQ 1000 pcs</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESS ── -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">How It Works</div>
+          <h2>Order in 4 Simple Steps</h2>
+          <p>From WhatsApp message to delivered bags — we make it seamless.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-num">1</div>
+            <h3>Share Requirements</h3>
+            <p>WhatsApp us your bag size, GSM, quantity, and any logo or design files you have.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-1">
+            <div class="step-num">2</div>
+            <h3>Get a Quote</h3>
+            <p>We send you a competitive price quote within a few hours. No hidden charges.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-2">
+            <div class="step-num">3</div>
+            <h3>Approve Sample</h3>
+            <p>We produce a sample for approval before starting full production. Quality guaranteed.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-3">
+            <div class="step-num">4</div>
+            <h3>Receive Your Bags</h3>
+            <p>Production completed and bags delivered to your doorstep across Hyderabad. Done!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY US ── -->
+    <section class="why-section">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-visual reveal">
+            <div class="floating-card-3d fc1">
+              <div class="fc-icon">🖨️</div>
+              <div class="fc-title">Sharp Custom Printing</div>
+              <div class="fc-desc">1–4 colour logo printing with perfect alignment every time.</div>
+            </div>
+            <div class="floating-card-3d fc2">
+              <div class="fc-icon">🌿</div>
+              <div class="fc-title">100% Eco-Friendly</div>
+              <div class="fc-desc">Fully biodegradable. Zero plastic. Better for Hyderabad.</div>
+            </div>
+            <div class="floating-card-3d fc3">
+              <div class="fc-icon">📦</div>
+              <div class="fc-title">Bulk Capacity</div>
+              <div class="fc-desc">High-volume production for chains, franchises, and wholesale.</div>
+            </div>
+          </div>
+
+          <div class="why-content reveal reveal-delay-2">
+            <h2>Why Hyderabad Businesses <em>Trust Us</em></h2>
+            <ul class="benefit-list">
+              <li>
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-text">
+                  <strong>48-Hour Dispatch</strong>
+                  <span>Fast turnaround without compromising quality. Rush orders accepted.</span>
+                </div>
+              </li>
+              <li>
+                <div class="benefit-icon">🎨</div>
+                <div class="benefit-text">
+                  <strong>Free Design Support</strong>
+                  <span>Our team helps you finalise artwork, sizing and printing specs at no extra cost.</span>
+                </div>
+              </li>
+              <li>
+                <div class="benefit-icon">💰</div>
+                <div class="benefit-text">
+                  <strong>Best Bulk Pricing</strong>
+                  <span>Direct manufacturer pricing. The more you order, the better the rate.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-block reveal">
+          <div class="cta-content">
+            <h2>Ready to Brand Your Packaging?</h2>
+            <p>Join hundreds of Hyderabad businesses who trust RBNM Eco Bags for their packaging needs.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://wa.me/919876543210?text=Hi%20RBNM%20Eco%20Bags!%20I%20am%20interested%20in%20a%20bulk%20order.%20Please%20share%20details." target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.851L.073 23.927c-.077.307.204.587.511.511l6.076-1.459A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.918 0-3.72-.517-5.27-1.418l-.377-.222-3.913.94.94-3.914-.222-.377A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Chat on WhatsApp
+            </a>
+            <div class="cta-phone">📞 Available Mon–Sat, 9 AM – 7 PM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand">
+        <img src="favicon.ico" alt="RBNM Eco Bags" />
+        <div>
+          <h1 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--kraft)">RBNM Eco Bags</h1>
+          <span style="font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)">Kraft Paper Specialists</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="about-us.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+      </div>
+      <div class="footer-copy">© 2026 RBNM Eco Bags, Hyderabad.</div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Custom Cursor ──
+    // ── Particles ──
+    const pWrap = document.getElementById('particles');
+    const pColors = ['#d2691e', '#6b2d0e', '#1a6b3c', '#f7b36d', '#c8860a'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 6 + 3;
+      p.style.cssText = `width:${size}px;height:${size}px;background:${pColors[i%pColors.length]};left:${Math.random()*100}%;animation-duration:${10+Math.random()*15}s;animation-delay:${Math.random()*10}s;`;
+      pWrap.appendChild(p);
+    }
+
+    // ── Header Scroll ──
+    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', scrollY > 40); });
+
+    // ── Mobile Menu ──
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+
+    // ── 3D Tilt on Bag ──
+    const heroBag = document.getElementById('heroBag');
+    document.addEventListener('mousemove', e => {
+      if (!heroBag) return;
+      const rect = heroBag.closest('.bag-scene').getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / (rect.width / 2);
+      const dy = (e.clientY - cy) / (rect.height / 2);
+      heroBag.style.transform = `translate(-50%,-50%) rotateY(${dx * 20}deg) rotateX(${-dy * 15}deg)`;
+    });
+
+    // ── Scroll Reveal ──
+    const reveals = document.querySelectorAll('.reveal');
+    const revObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => revObs.observe(el));
+
+    // ── Counter Animation ──
+    const counters = document.querySelectorAll('.stat-num[data-target]');
+    const cntObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = +el.dataset.target;
+        const suffix = el.dataset.suffix || '+';
+        let cur = 0;
+        const inc = target / 50;
+        const timer = setInterval(() => {
+          cur = Math.min(cur + inc, target);
+          el.textContent = Math.floor(cur) + (cur >= target ? suffix : '');
+          if (cur >= target) clearInterval(timer);
+        }, 30);
+        cntObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => { el.dataset.suffix = '+'; cntObs.observe(el); });
+
+    // ── 3D tilt on product cards ──
+    document.querySelectorAll('.product-card, .stat-card, .step-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `translateY(-16px) rotateX(${-y * 12}deg) rotateY(${x * 12}deg) scale(1.02)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  </script>
+</body>
+</html>
