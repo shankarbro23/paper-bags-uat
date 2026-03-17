@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RBNM Eco Bags — Premium Kraft Paper Bags Hyderabad</title>
   <meta name="description" content="Custom printed kraft paper bags for restaurants, bakeries, retail shops & corporates in Hyderabad. Bulk orders welcome. Eco-friendly & plastic-free packaging." />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="rbnm-logo.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -644,7 +644,7 @@
   <header id="header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="favicon.ico" alt="RBNM Eco Bags" />
+        <img src="rbnm-logo.png" alt="RBNM Eco Bags" />
         <div>
           <h1>RBNM Eco Bags</h1>
           <span>Kraft Paper Specialists</span>
@@ -1019,7 +1019,7 @@
   <footer>
     <div class="container footer-inner">
       <div class="brand">
-        <img src="favicon.ico" alt="RBNM Eco Bags" />
+        <img src="rbnm-logo.png" alt="RBNM Eco Bags" />
         <div>
           <h1 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--kraft)">RBNM Eco Bags</h1>
           <span style="font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)">Kraft Paper Specialists</span>
@@ -1049,23 +1049,37 @@
     }
 
     // ── Header Scroll ──
-    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', scrollY > 40); });
+    const header = document.getElementById('header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    }
 
     // ── Mobile Menu ──
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+    }
 
     // ── 3D Tilt on Bag ──
     const heroBag = document.getElementById('heroBag');
+    const bagScene = heroBag ? heroBag.closest('.bag-scene') : null;
+    let bagTiltRAF = null;
+
     document.addEventListener('mousemove', e => {
-      if (!heroBag) return;
-      const rect = heroBag.closest('.bag-scene').getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const dx = (e.clientX - cx) / (rect.width / 2);
-      const dy = (e.clientY - cy) / (rect.height / 2);
-      heroBag.style.transform = `translate(-50%,-50%) rotateY(${dx * 20}deg) rotateX(${-dy * 15}deg)`;
+      if (!heroBag || !bagScene) return;
+
+      if (bagTiltRAF) cancelAnimationFrame(bagTiltRAF);
+      bagTiltRAF = requestAnimationFrame(() => {
+        const rect = bagScene.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const dx = (e.clientX - cx) / (rect.width / 2);
+        const dy = (e.clientY - cy) / (rect.height / 2);
+        heroBag.style.transform = `translate(-50%,-50%) rotateY(${dx * 20}deg) rotateX(${-dy * 15}deg)`;
+      });
     });
 
     // ── Scroll Reveal ──
