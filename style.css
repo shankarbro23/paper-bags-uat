@@ -421,6 +421,20 @@ section {
   gap: 1.2rem;
 }
 
+.video-wrapper {
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.video-wrapper:hover {
+  transform: perspective(900px) rotateY(-6deg) rotateX(4deg) scale(1.02);
+  box-shadow: 0 20px 50px rgba(33, 18, 9, 0.22);
+}
+
 .gallery a {
   display: block;
 }
